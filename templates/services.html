@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}  
+    <!-- jinja templating  -->
+    
+    <img src = "{{url_for('static',filename = '1.jpeg')}}">
+
+    {% for user in users %}
+        <li><a href ="{{ user.url}}">{{ user.username }}</a></li>
+    {% endfor %}
+{% endblock %}

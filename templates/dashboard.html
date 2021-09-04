@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    button {
+        background-color: #04AA6D;
+        color: white;
+        /* padding: 14px 20px;
+        margin: 8px 0; */
+        border: none;
+        cursor: pointer;
+        /* width: 100%; */
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+</style>
+<h2>Welcome {{Data.name}}..</h2>
+
+<table>
+    <tr>
+        <th>Serial No.</th>
+        <th>By Doctor</th>
+        <th>Content</th>
+        <th>Date Time</th>
+        <th>Uploads</th>
+    </tr> 
+    <tr>
+        <td>{{Data.sno}}</td>
+        <td>{{Data.name}}</td>
+        <td>{{Data.content}}</td>
+        <td>{{Data.date_time}}</td>
+        <td><button><a href="/datafetch/{{Data.slug}}">upload</a></button></td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+    <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+    </tr>
+    <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+    </tr>
+</table>
+{% endblock %}

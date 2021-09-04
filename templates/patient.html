@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Patient Profile</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+#random{
+  width:35%;
+}
+
+    </style>
+
+<script>
+ 
+  window.onload = function () {
+  
+  var chart2 = new CanvasJS.Chart("chartContainer2", {
+    animationEnabled: true,
+    theme: "light2",
+    title:{
+      text: "Sugar Level"
+      
+    },
+
+
+    
+    data: [{        
+      type: "line",
+          indexLabelFontSize: 16,
+      dataPoints: [
+        { y: 180 },
+        { y: 188},
+        { y: 210, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+        { y: 170 },
+        { y: 160 },
+        { y: 150 },
+        { y: 200 },
+        { y: 190 },
+        { y: 120 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+        { y: 180 },
+        { y: 180 },
+        { y: 160 }
+      ]
+    }]
+  });
+  chart2.render();
+  
+  }
+  </script>
+    
+    <!-- Custom styles for this template -->
+    <link href="sidebars.css" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <!-- Logo Image -->
+            <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+            <!-- Logo Text -->
+            <span class="text-uppercase font-weight-bold">Virtual Health Identity</span>
+          </a>
+          <form class="ctools-auto-submit-full-form ctools-auto-submit-processed jquery-once-1-processed hideSubmitButton-processed" action="#" method="get" id="views-exposed-form-doctor-page-block-2" accept-charset="UTF-8"><div><div class="views-exposed-form">
+            <div class="views-exposed-widgets clearfix">
+                    <div id="edit-field-specialty-details-tid-wrapper" class="views-exposed-widget views-widget-filter-field_specialty_details_tid">
+                                  <div class="views-widget">
+                    <div class="form-item form-item-field-specialty-details-tid form-type-select form-group"><select class="form-control form-select" id="edit-field-specialty-details-tid" name="field_specialty_details_tid"><option value="All" selected="selected">Select Specialty</option><option value="1">Anaesthesia</option><option value="192">Bariatric Surgery</option><option value="684">Cardiology - Non Interventional</option><option value="686">Dental Surgery</option><option value="243">Dermatology</option><option value="331">Ear Nose Throat Head And Neck Surgery</option><option value="197">Emergency Medicine</option><option value="334">General Pathology</option><option value="5">General Surgery</option><option value="690">Intensive Care</option><option value="6">Internal Medicine</option><option value="694">Laboratory Medicine - Pathology</option><option value="3">Medical Gastroenterology</option><option value="207">Minimally Invasive Gynecology</option><option value="209">Nephrology</option><option value="213">Nutrition &amp; Dietetics</option><option value="700">Obstetrics and Gynaecology</option><option value="215">Orthopaedics</option><option value="348">Paediatrics</option><option value="704">Physiotherapy</option><option value="219">Physiotherapy and Rehabilitative Services</option><option value="249">Plastic and Reconstructive Surgery</option><option value="220">Pulmonology</option><option value="359">Radiology</option><option value="705">Renal Transplant</option><option value="223">Reproductive Medicine &amp; IVF</option><option value="13">Urology</option></select></div>        </div>
+                        </div>
+                              <div class="views-exposed-widget views-submit-button">
+                <button class="ctools-use-ajax ctools-auto-submit-click js-hide btn btn-info form-submit" type="submit" id="edit-submit-doctor-page" name="" value="Apply">Apply</button>
+              </div>
+                </div>
+          </div>
+          </div></form>
+            <div id="navbarSupportedContent">
+            <ol>
+            
+                <li><a href="patient.html" class="nav-link px-2"><img src="https://png.pngtree.com/png-clipart/20190619/original/pngtree-vector-avatar-icon-png-image_4013749.jpg" width="40" height="40" alt="Avatar"></a></li>    
+                <a href="index.html">
+                  <button type="button" class="btn btn-primary float-left">LogOut</button>
+                </a>
+            </ol>
+          </div>
+          
+        </div>
+      </nav>
+
+
+      <div class="d-flex flex-column p-3 bg-light" style="width: 280px;">
+        <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Patient Profile</span>
+        </div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="patient.html" class="nav-link active">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+              Search Doctors
+            </a>
+          </li>
+          <li>
+            <a href="report.html" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              Reports
+            </a>
+          </li>
+        </ul>
+        </div>
+      
+        
+
+        <footer class="bd-footer p-3 p-md-5 mt-5 bg-light text-center text-sm-start">
+          <div class="container">
+            <div class="text-center">
+            <ul class="bd-footer-links ps-0 mb-3">
+              <li class="d-inline-block"><a href="https://github.com/Barrylimarti/Dangal">GitHub</a></li>
+              <li class="d-inline-block ms-3"><a href="about.html">About</a></li>
+            </ul>
+            <p class="mb-0">Designed and built with all the love in the world by the <a href="index.html"><b> TEAM DANGAL</b></a>.
+          </div>
+          <div class="text-center">
+            <p class="right center-sm">All rights reserved © 2021 VHI TEAM</p>
+          </div>
+          </div>
+        </footer>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</html>
+       
+
+
+      <!--
+     <div class="p-3 bg-white" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-5 fw-semibold">Collapsible</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+              Home
+            </button>
+            <div class="collapse show" id="home-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Updates</a></li>
+                <li><a href="#" class="link-dark rounded">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+              Dashboard
+            </button>
+            <div class="collapse show" id="dashboard-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                <li><a href="#" class="link-dark rounded">Annually</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+              Orders
+            </button>
+            <div class="collapse show" id="orders-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">New</a></li>
+                <li><a href="#" class="link-dark rounded">Processed</a></li>
+                <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                <li><a href="#" class="link-dark rounded">Returned</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="border-top my-3"></li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+              Account
+            </button>
+            <div class="collapse" id="account-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">New...</a></li>
+                <li><a href="#" class="link-dark rounded">Profile</a></li>
+                <li><a href="#" class="link-dark rounded">Settings</a></li>
+                <li><a href="#" class="link-dark rounded">Sign out</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    
+
+   <div id="map" style="width:400px;height:400px;background:grey"></div>  
+    <script>  
+    function myMap() {  
+    var mapOptions = {  
+        center: new google.maps.LatLng(51.5, -0.12),  
+        zoom: 10,  
+        mapTypeId: google.maps.MapTypeId.HYBRID  
+    }  
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+    }  
+    </script>  
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>  
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+      -->
+
+  </body>

@@ -1,0 +1,30 @@
+{
+    "params": {
+        "local_server": "True",
+        "loc_uri":"mysql://root:@localhost/virtual health identification",
+        "prod_uri":"mysql://passward:@productionhost/Virtual Health Identification",
+        "fb_url":"https://facebook.com/yashwantdwala",
+        "tw_url":"https://twitter.com/",
+        "gh_url":"https://github.com/yashwant-dwala",
+        "ln_url":"https://www.linkedin.com/in/yashwant-dwala-16427a198",
+        "site_name":"Virtual Health Identification",
+        "tag_line": "Online Solution for Offline Problems.",
+        "gmail_user": "virtual.health.identification@gmail.com",
+        "gmail_password":"Virtualhealth@910",
+        "name": "Yashwant Dwala",
+        "no_of_records": "4",
+        "username" :"first_user",
+        "password": "12345678",
+        "slug_words": "  + = - db sql 7 & % class V vhi 1 45 6 . asp user ? bsdk mc == 0 bc tkmkc # ! brbtc",
+        "form_error_msg":"falana falana m gadbad hai",
+        "files_location" : "D:\\DOCUMENTS\\Backend Using Flask\\static\\PUserFiles"
+    },
+    "login_params": {
+        "gmail_user": "virtual.health.identification@gmail.com",
+        "gmail_password":"Virtualhealth@910",
+        "username" :"first_user",
+        "password": "12345678",
+        "login_image": "login.svg"
+        
+    }
+}

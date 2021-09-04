@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- for table version ... .....  -->
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    button {
+        background-color: #04AA6D;
+        color: white;
+        /* padding: 14px 20px;
+        margin: 8px 0; */
+        border: none;
+        cursor: pointer;
+        /* width: 100%; */
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+</style>
+
+<!-- <style>
+    #inputOTP {
+        width: 40%;
+        box-sizing: border-box;
+    }
+    .mt-5 { margin-top: 3rem !important; }
+</style> -->
+
+<!-- <h2>Welcome {{Data.name}}..as by session {{x}}</h2> -->
+
+<br>
+<br>
+<h1 class="text-center">Welcome Dr. {{Data.name}} <br> ENTER PATIENT's ACCOUNT by session {{x}}</h1>
+<form class="modal-content" name="sent_message" id="contact_form" action="/uploader" method="post" novalidate>
+        <input type="file" id="myFile" name="file">
+        <button type="submit" >upload</button>
+    </form>
+    
+{% endblock %}

@@ -1,0 +1,9 @@
+ * Xampp ko install kro
+ * window btn  dba k iska naam search krky control panel khul jaega
+ * red tick waaly dono start kr lena
+ * http://localhost/phpmyadmin/       ye google p daal dena
+ * ny page m upper top left (->) p click krna side panel nhi dikhy to
+ * +new p click ,virtual health identification is naam ka data base bana lena
+ * side panel m isky andar fir +new p click krna nyi table k liye 
+ * photo m red mark waaly naam se 2 table banani h datatype or values next photo m h dekh lena
+ * baaki glti ho jaye to change bhi hora

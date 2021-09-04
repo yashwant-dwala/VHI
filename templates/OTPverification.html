@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<style>
+    #inputOTP {
+        width: 40%;
+        box-sizing: border-box;
+
+    }
+
+    .mt-5 {
+        margin-top: 3rem !important;
+    }
+</style>
+
+
+<br>
+<br>
+<!-- <h1 class="text-center">GO TO PATIENT's ACCOUNT</h1> -->
+<div class="bd p-3 p-md-5 mt-5 bg-light text-center text-sm-start">
+
+    <br>
+    <form action="/datafetch/{{XData.slug}}" method="POST"></form>
+    <div class="input-group input-group-sm" id="inputOTP">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Enter OTP</span>
+        <input type="number" class="form-control" aria-label="Sizing example input" name="OTP"
+            aria-describedby="inputGroup-sizing-lg">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" class="text-center">Confirm</button>
+</div>
+{% endblock %}
